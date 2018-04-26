@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+
+
+        android:id="@+id/content_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="app.sunshine.com.example.android.movieapp2.DetailsActivityFragment"
+        tools:showIn="@layout/activity_details"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="#004D40">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Title"
+                android:id="@+id/movietitle"
+                android:textSize="30dp"
+                android:textColor="#fff"
+                android:textStyle="italic"
+                android:paddingLeft="30dp"
+                android:paddingTop="30dp"
+                android:fontFamily="sans-serif"
+                />
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:paddingLeft="7dp">
+
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="horizontal">
+    <LinearLayout
+
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_height="240dp"
+            android:layout_width="160dp"
+            android:id="@+id/detail_image"
+            android:scaleType="fitXY"
+            android:paddingLeft="10dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Release data"
+            android:id="@+id/movie_Release_data"
+            android:textStyle="italic"
+
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:textSize="25dp"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/movie_vote_count"
+            android:text="vote count"
+            android:paddingLeft="10dp"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vote average "
+            android:paddingLeft="10dp"
+            android:textSize="20dp"
+            android:id="@+id/movie_vote_average"
+            android:textStyle="italic"
+            android:layout_marginBottom="5dp"/>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Mark as Favorite"
+    android:layout_marginTop="30dp"
+    android:onClick="mark"
+    android:id="@+id/markbutton"/>
+
+
+    </LinearLayout>
+</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/movie_overview"
+        android:textStyle="italic"
+        android:paddingTop="7dp"
+        />
+
+</LinearLayout>
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:orientation="vertical">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Review"
+        android:text="Review : "
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="#000"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+
+        android:id="@+id/Reviewlistview"></ListView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TralerTextview"
+        android:text="trailers : "
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:paddingTop="5dp"
+        android:paddingBottom="4dp"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:id="@+id/Trailerslistview"></ListView>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView44"
+        android:text="original_language : "
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detaile_text4"
+        android:textStyle="italic"
+        android:layout_marginBottom="5dp"/>
+
+
+</LinearLayout>
+
+
+    <ImageView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/movie_backdrop"
+        android:scaleType="fitXY"/>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView66"
+        android:text="popularity : "
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detaile_text6"
+        android:textStyle="italic"
+        android:layout_marginBottom="5dp"/>
+
+
+
+</LinearLayout>
+    </LinearLayout>
+</ScrollView>
